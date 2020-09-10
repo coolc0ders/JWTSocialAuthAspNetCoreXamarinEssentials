@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuthDemoXForms.Views.UserProfilPage"
+             Shell.PresentationMode="Modal"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:viewModels="clr-namespace:AuthDemoXForms.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModels:UserProfilViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="Start"
+                         Margin="10">
+                <Image HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   Margin="10"
+                       HeightRequest="100"
+                       WidthRequest="200"
+                   Source="{Binding UserPic}"/>
+                <!---->
+                <Label Margin="10"
+                   FontSize="Title"
+                   d:Text="Damien Doumer"
+                   Text="{Binding UserName}"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"/>
+
+                <Label FontSize="Body"
+                       TextColor="LightGray"
+                       d:Text="andfaofnweoirwneo823489oewr.wrownerwgnuie;nflkjsdfsakjdfhuifhwuhr8fl"
+                       VerticalOptions="Center"
+                       Text="{Binding Token}"
+                       MaxLines="5"
+                       LineBreakMode="TailTruncation"
+                       HeightRequest="100"
+                       Margin="0"/>
+
+                <Button Text="Test Auth"
+                    Command="{Binding TestAuthCommand}"/>
+                <Label Text="Whether Data"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Start"/>
+                <Label Text="{Binding WeatherData}"/>
+            </StackLayout>
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
