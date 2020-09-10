@@ -26,6 +26,11 @@
                    Margin="10,20,0,0"/>
             
             <StackLayout Grid.Row="1">
+                <!--<ImageButton Source="googleSignin.png"
+                             HorizontalOptions="Center"
+                             BackgroundColor="#4285F4"
+                             Command="{Binding GoogleAuthCommand}"
+                             CornerRadius="3"/>-->
                 <StackLayout Orientation="Horizontal"
                              BackgroundColor="#4285F4"
                              HorizontalOptions="Center">
@@ -35,9 +40,9 @@
                             BackgroundColor="#4285F4"
                             FontAttributes="Bold"
                             TextColor="White"
-                    Command="{Binding GoogleAuthCommand}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
+                            Command="{Binding GoogleAuthCommand}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal"
@@ -50,8 +55,8 @@
                             FontAttributes="Bold"
                             TextColor="White"
                             Command="{Binding FacebookAuthCommand}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                 </StackLayout>
                 
                 </StackLayout>
