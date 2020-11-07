@@ -1,6 +1,7 @@
 # JWT Auth with Xamarin Forms and ASP.net core 
 
 This repo contains code showing code for:
+- Using Xamarin Essentials' Web authenticator API
 - Implementing simple JWT authentication
 - Social Authentication with __Google__ and __Facebook__ 
 
